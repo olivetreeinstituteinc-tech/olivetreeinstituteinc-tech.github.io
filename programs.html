@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs | Olive Tree Institute</title>
+<meta name="description" content="Olive Tree Institute offers faith-integrated programs in public speaking, leadership, and personal development for youth and adults across the GTA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html" class="brand">
+      <img src="assets/icon-green.png" alt="Olive Tree Institute">
+      <span class="brand-name">Olive Tree Institute</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html" aria-current="page">Programs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+    </ul>
+  </nav>
+  <script>
+    document.querySelectorAll('.nav-toggle').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var links = btn.nextElementSibling;
+        var open = links.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+      });
+    });
+  </script>
+  <div class="page-header">
+    <p class="eyebrow">Programs</p>
+    <h1>Explore Our Programs</h1>
+  </div>
+
+  <section class="section reveal">
+    <div class="wrap">
+      <div class="programs-grid">
+        <div class="program-card" id="speak-from-within">
+          <span class="program-status">Full for This Cohort</span>
+          <h3>Speak from Within</h3>
+          <p>Our flagship 7-week public speaking program for ages 10 to 14, closing with a Showcase Night. Seven weeks of helping your child understand who they are, what they feel, and how to stand in front of a room and speak from that place. Faith-rooted and evidence-based: a child's ability to name what they're feeling is one of the strongest predictors of real resilience. Full for this cohort, message us to hear about the next one.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScV42PMo4azN5tNJQvVRhaYlTdinpJosjAcsb6fMPY8DbckaQ/viewform?usp=dialog" class="btn btn-primary" style="margin-top:16px;" target="_blank" rel="noopener">Join the Waitlist</a>
+        </div>
+        <div class="program-card" id="young-founders">
+          <span class="program-status">Currently Running</span>
+          <h3>Young Founders Program</h3>
+          <p>A 6-week youth entrepreneurship program for ages 10 to 14. Meets Thursdays.</p>
+          
+        </div>
+        <div class="program-card">
+          <span class="program-status">Learn More</span>
+          <h3>She Speaks: A Return to Fitra</h3>
+          <p>A full-day workshop for Muslim women reclaiming their voice after years of self-silencing, grounded in fitra rather than secular confidence culture.</p>
+          
+        </div>
+        <div class="program-card">
+          <span class="program-status">Learn More</span>
+          <h3>The Speaking Table</h3>
+          <p>A biweekly drop-in public speaking practice space for youth, open by single visit or six-session pass.</p>
+          
+        </div>
+        <div class="program-card">
+          <span class="program-status">Learn More</span>
+          <h3>Vision Architects</h3>
+          <p>A 3-week vision and goal-design workshop for ages 13 to 15.</p>
+          
+        </div>
+        <div class="program-card">
+          <span class="program-status">Learn More</span>
+          <h3>ROOTED</h3>
+          <p>A faith-integrated life skills program for youth, built around a 10-session structure.</p>
+          
+        </div>
+        <div class="program-card">
+          <span class="program-status">Learn More</span>
+          <h3>Confident Communicators</h3>
+          <p>A youth public speaking cohort program for kids ages 7 to 10.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band reveal">
+    <h2>Not sure which program fits your family?</h2>
+    <p class="attribution" style="margin-top:22px;"><a href="contact.html" class="btn btn-primary" style="margin-left:0;">Ask Us</a></p>
+  </div>
+  <footer>
+    <div class="wrap">
+      <div>
+        <div class="foot-brand"><img src="assets/icon-cream.png" alt=""> Olive Tree Institute</div>
+        <p style="max-width:32ch; color: var(--oti-rule); font-size:0.85rem; margin-top:8px;">Faith-rooted programs in confidence, leadership, and voice for youth and adults. Based in the GTA.</p>
+      </div>
+      <ul class="foot-links">
+        <li><a href="mailto:olivetreeinstitute.inc@gmail.com">Email</a></li>
+        <li><a href="https://instagram.com/olive.tree.institute" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot-bottom">&copy; 2026 Olive Tree Institute Inc. All rights reserved.</div>
+  </footer>
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function(el) { revealObserver.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('in-view'); });
+    }
+  </script>
+</body>
+</html>
