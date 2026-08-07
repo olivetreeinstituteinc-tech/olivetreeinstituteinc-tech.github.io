@@ -143,7 +143,9 @@ a { color: var(--oti-mid); }
   position: relative;
   padding: 60px 24px 90px;
   overflow: hidden;
-  background: radial-gradient(ellipse 900px 500px at 80% 0%, var(--oti-light) 0%, var(--oti-cream) 60%);
+  background-image: linear-gradient(100deg, var(--oti-cream) 0%, rgba(251,249,244,0.94) 30%, rgba(251,249,244,0.55) 65%, rgba(251,249,244,0.25) 100%), url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center 35%;
 }
 
 .hero .wrap {
@@ -173,6 +175,11 @@ a { color: var(--oti-mid); }
   font-weight: 700;
   color: var(--oti-bark);
   margin: 0 0 14px;
+}
+
+.hero-logo {
+  width: 150px;
+  margin: 0 0 28px;
 }
 
 .hero h1 {
@@ -560,12 +567,29 @@ footer .foot-bottom {
   text-align: center;
 }
 
-.page-header .eyebrow { text-align: center; }
+.page-header-photo {
+  padding: 90px 24px 70px;
+  text-align: center;
+  background-image: linear-gradient(rgba(251,249,244,0.88), rgba(251,249,244,0.88)), var(--header-photo);
+  background-size: cover;
+  background-position: center 40%;
+}
 
-.page-header h1 {
+.page-header .eyebrow, .page-header-photo .eyebrow { text-align: center; }
+
+.page-header h1, .page-header-photo h1 {
   font-family: var(--serif);
   font-size: clamp(2.2rem, 4.5vw, 3rem);
+  letter-spacing: -0.01em;
   margin: 0;
+}
+
+.feature-image {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: var(--shadow-md);
+  margin: 32px 0;
+  display: block;
 }
 
 /* ---- Simple content blocks (About page prose) ---- */
