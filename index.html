@@ -52,8 +52,8 @@
       <div>
         <img src="logo-green.png" alt="Olive Tree Institute" class="hero-logo">
         <p class="eyebrow">Some Things Take Root Before They Rise</p>
-        <h1>Confidence and leadership, built on faith, not stripped of it.</h1>
-        <p class="lead">Confidence without direction fades fast. Olive Tree Institute builds both, rooted in faith, rooted in the idea that growth starts with remembering who you are. Structured programs for Muslim youth, families, and adults across the GTA, not one-off workshops.</p>
+        <h1>Confidence and leadership, built on faith.</h1>
+        <p class="lead">Confidence without direction fades fast. Olive Tree Institute builds both, rooted in faith, rooted in the idea that growth starts with remembering who you are. Structured, multi-week programs for Muslim youth, families, and adults across the GTA.</p>
         <div class="btn-row">
           <a href="programs.html" class="btn btn-primary">Explore Programs</a>
           <a href="contact.html" class="btn btn-outline">Get in Touch</a>
@@ -115,8 +115,8 @@
         </div>
         <div class="value-card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-          <h3>Built to Repeat</h3>
-          <p>Facilitator guides, workbooks, and full curricula, designed to run again and again, not reinvented every time.</p>
+          <h3>Built to Last</h3>
+          <p>Facilitator guides, workbooks, and full curricula, designed to run again and again.</p>
         </div>
         <div class="value-card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="3.2"/><path d="M5 21c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/></svg>
@@ -148,21 +148,93 @@
 
   <section class="section section-light reveal">
     <div class="wrap">
-      <h2 class="section-title">Our Flagship Program</h2>
-      <p class="section-sub">For ages 10 to 12 and 13 to 16.</p>
-      <div class="program-list">
-        <div class="program-card" id="speak-from-within">
-          <div></div>
-          <div>
-            <span class="program-status">Currently Running</span>
-            <h3>Speak from Within</h3>
-            <p>Seven weeks of helping your child understand who they are, what they feel, and how to stand in front of a room and speak from that place. Faith-rooted. Evidence-based. Full for this cohort, message us to hear about the next one.</p>
+      <h2 class="section-title">Program Updates</h2>
+      <p class="section-sub">What's currently open, running, or coming soon.</p>
+      <div class="program-carousel" id="program-carousel">
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carousel-track">
+
+            <div class="carousel-slide">
+              <div class="program-card">
+                <span class="program-status">Registration Open</span>
+                <h3>Confident Communicators</h3>
+                <p>Give your child the confidence to express themselves. Eight sessions for ages 9 to 12, built on games, storytelling, and public speaking practice woven with dua and reflection.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfp--RzcrpcQ8trLCXyTlDIBhyGBXha0nq1G0xo0kOuGLUgYA/viewform?usp=publish-editor" class="btn btn-primary" style="margin-top:16px;" target="_blank" rel="noopener">Register Now</a>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="program-card">
+                <span class="program-status">Currently Running</span>
+                <h3>Speak from Within</h3>
+                <p>Seven weeks of helping your child understand who they are, what they feel, and how to stand in front of a room and speak from that place. Faith-rooted. Evidence-based. Full for this cohort, message us to hear about the next one.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScV42PMo4azN5tNJQvVRhaYlTdinpJosjAcsb6fMPY8DbckaQ/viewform?usp=dialog" class="btn btn-primary" style="margin-top:16px;" target="_blank" rel="noopener">Join the Waitlist</a>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="program-card">
+                <span class="program-status">Coming Soon</span>
+                <h3>Rooted</h3>
+                <p>Our newest flagship for ages 14 to 16, built on Surah Ibrahim 14:24: roots, branches, fruit, harvest, the whole tree in one seven-week program.</p>
+                <a href="programs.html#rooted" class="btn btn-outline" style="margin-left:0; margin-top:16px;">Learn More</a>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="program-card">
+                <span class="program-status">Coming Soon</span>
+                <h3>She Speaks: A Return to Fitra</h3>
+                <p>A full-day workshop for Muslim women designed to help them reclaim the voice they were always permitted to use.</p>
+                <a href="programs.html#she-speaks" class="btn btn-outline" style="margin-left:0; margin-top:16px;">Learn More</a>
+              </div>
+            </div>
+
           </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScV42PMo4azN5tNJQvVRhaYlTdinpJosjAcsb6fMPY8DbckaQ/viewform?usp=dialog" class="btn btn-primary" target="_blank" rel="noopener">Get on the List</a>
+        </div>
+        <button class="carousel-arrow carousel-prev" id="carousel-prev" aria-label="Previous program">&#8249;</button>
+        <button class="carousel-arrow carousel-next" id="carousel-next" aria-label="Next program">&#8250;</button>
+        <div class="carousel-dots" id="carousel-dots">
+          <button class="carousel-dot active" data-index="0" aria-label="Show slide 1"></button>
+          <button class="carousel-dot" data-index="1" aria-label="Show slide 2"></button>
+          <button class="carousel-dot" data-index="2" aria-label="Show slide 3"></button>
+          <button class="carousel-dot" data-index="3" aria-label="Show slide 4"></button>
         </div>
       </div>
     </div>
   </section>
+
+  <script>
+    (function() {
+      var track = document.getElementById('carousel-track');
+      var dots = document.querySelectorAll('#carousel-dots .carousel-dot');
+      var slides = document.querySelectorAll('#carousel-track .carousel-slide');
+      var index = 0;
+      var total = slides.length;
+      var timer;
+
+      function goTo(i) {
+        index = (i + total) % total;
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+        dots.forEach(function(d, di) { d.classList.toggle('active', di === index); });
+      }
+      function next() { goTo(index + 1); }
+      function prev() { goTo(index - 1); }
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(next, 6000);
+      }
+
+      document.getElementById('carousel-next').addEventListener('click', function() { next(); resetTimer(); });
+      document.getElementById('carousel-prev').addEventListener('click', function() { prev(); resetTimer(); });
+      dots.forEach(function(d) {
+        d.addEventListener('click', function() { goTo(parseInt(d.dataset.index, 10)); resetTimer(); });
+      });
+
+      goTo(0);
+      resetTimer();
+    })();
+  </script>
 
   <section class="section reveal">
     <div class="wrap founder-block">
