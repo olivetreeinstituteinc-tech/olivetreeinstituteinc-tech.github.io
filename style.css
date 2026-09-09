@@ -420,6 +420,83 @@ a { color: var(--oti-mid); }
 
 .program-list { display: flex; flex-direction: column; gap: 24px; }
 
+/* ---- Program update carousel (home page) ---- */
+
+.program-carousel {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.carousel-slide .program-card {
+  grid-template-columns: 1fr;
+  text-align: left;
+  height: 100%;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--oti-cream);
+  border: 1px solid rgba(157, 184, 162, 0.5);
+  color: var(--oti-dark);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-arrow:hover { transform: translateY(-50%) scale(1.08); box-shadow: var(--shadow-md); }
+.carousel-prev { left: 0; }
+.carousel-next { right: 0; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: var(--oti-rule);
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot.active { opacity: 1; background: var(--oti-sage); transform: scale(1.25); }
+
+@media (max-width: 650px) {
+  .program-carousel { padding: 0 48px; }
+  .carousel-arrow { width: 36px; height: 36px; font-size: 1.1rem; }
+}
+
 /* ---- Programs grid (programs page) ---- */
 
 .programs-grid {
