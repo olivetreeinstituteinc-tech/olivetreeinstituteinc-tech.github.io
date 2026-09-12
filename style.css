@@ -143,7 +143,7 @@ a { color: var(--oti-mid); }
   position: relative;
   padding: 60px 24px 90px;
   overflow: hidden;
-  background-image: linear-gradient(100deg, var(--oti-cream) 0%, rgba(251,249,244,0.94) 30%, rgba(251,249,244,0.55) 65%, rgba(251,249,244,0.25) 100%), url('hero-bg.jpg');
+  background-image: linear-gradient(100deg, rgba(251,249,244,0.92) 0%, rgba(251,249,244,0.75) 30%, rgba(251,249,244,0.45) 65%, rgba(251,249,244,0.15) 100%), url('hero-bg.jpg');
   background-size: cover;
   background-position: center 35%;
 }
@@ -287,20 +287,6 @@ a { color: var(--oti-mid); }
   padding: 80px 24px;
   text-align: center;
   overflow: hidden;
-}
-
-.band::before {
-  content: '\201C';
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: var(--serif);
-  font-size: 14rem;
-  line-height: 1;
-  color: var(--oti-cream);
-  opacity: 0.06;
-  pointer-events: none;
 }
 
 .band h2 {
@@ -645,12 +631,15 @@ footer .foot-bottom {
 }
 
 .page-header-photo {
-  padding: 90px 24px 70px;
+  padding: 170px 24px 150px;
   text-align: center;
-  background-image: linear-gradient(rgba(251,249,244,0.88), rgba(251,249,244,0.88)), var(--header-photo);
+  background-image: linear-gradient(rgba(31,58,36,0.42), rgba(31,58,36,0.68)), var(--header-photo);
   background-size: cover;
-  background-position: center 40%;
+  background-position: center 35%;
 }
+
+.page-header-photo .eyebrow { color: var(--oti-light) !important; }
+.page-header-photo h1 { color: var(--oti-cream); }
 
 .page-header .eyebrow, .page-header-photo .eyebrow { text-align: center; }
 
