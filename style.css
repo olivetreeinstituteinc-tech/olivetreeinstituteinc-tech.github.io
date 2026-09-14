@@ -446,12 +446,25 @@ a { color: var(--oti-mid); }
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  font-size: 1.4rem;
-  line-height: 1;
   cursor: pointer;
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.carousel-arrow::before {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+}
+
+.carousel-prev::before { transform: rotate(-135deg); margin-left: 4px; }
+.carousel-next::before { transform: rotate(45deg); margin-right: 4px; }
 
 .carousel-arrow:hover { transform: translateY(-50%) scale(1.08); box-shadow: var(--shadow-md); }
 .carousel-prev { left: 0; }
@@ -480,7 +493,7 @@ a { color: var(--oti-mid); }
 
 @media (max-width: 650px) {
   .program-carousel { padding: 0 48px; }
-  .carousel-arrow { width: 36px; height: 36px; font-size: 1.1rem; }
+  .carousel-arrow { width: 36px; height: 36px; }
 }
 
 /* ---- Programs grid (programs page) ---- */
