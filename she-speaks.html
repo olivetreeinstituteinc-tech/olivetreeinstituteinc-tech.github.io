@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>She Speaks: A Return to Fitrah | November 15, 2026</title>
+<meta name="description" content="She Speaks is an intimate full-day gathering for 35 Muslim women in Oakville on Sunday, November 15, 2026. Breakfast, lunch, and refreshments included.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="She Speaks: A Return to Fitrah">
+<meta property="og:description" content="She Speaks is an intimate full-day gathering for 35 Muslim women in Oakville on Sunday, November 15, 2026. Breakfast, lunch, and refreshments included.">
+<meta property="og:image" content="https://olivetreeinstitute.ca/she-speaks-flyer.jpg">
+<meta property="og:url" content="https://olivetreeinstitute.ca/she-speaks.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="She Speaks: A Return to Fitrah">
+<meta name="twitter:description" content="She Speaks is an intimate full-day gathering for 35 Muslim women in Oakville on Sunday, November 15, 2026. Breakfast, lunch, and refreshments included.">
+<meta name="twitter:image" content="https://olivetreeinstitute.ca/she-speaks-flyer.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#F5F0E8;
+  --linen:#EDE5D6;
+  --sand:#D4C4A8;
+  --taupe:#8A7860;
+  --warm:#5C4E3E;
+  --espresso:#3A2E22;
+  --olive:#4A5A3A;
+  --olive-light:#6B7A5A;
+  --olive-pale:#E8EDE0;
+  --fac-bg:#FAF6F0;
+  --fac-border:#E8DDD0;
+  --white:#FFFFFF;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Lato',sans-serif;font-weight:300;background:var(--cream);color:var(--espresso);line-height:1.8;-webkit-font-smoothing:antialiased;font-size:16px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);padding:16px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--sand)}
+.nav-logo{font-family:'Eczar',serif;font-size:12px;letter-spacing:3px;color:var(--taupe);text-transform:uppercase;text-decoration:none}
+.nav-cta{background:var(--olive);color:var(--white);font-family:'Lato',sans-serif;font-size:11px;font-weight:400;letter-spacing:2px;text-transform:uppercase;padding:10px 24px;text-decoration:none;border-radius:2px;transition:background 0.2s}
+.nav-cta:hover{background:var(--espresso)}
+
+/* BANNER */
+.banner-img{width:100%;display:block;height:400px;object-fit:cover;object-position:center top;margin-top:58px}@media(max-width:720px){.banner-img{height:220px;margin-top:54px}}
+
+/* HERO META */
+.hero-meta-section{background:var(--linen);padding:52px 40px;border-bottom:1px solid var(--sand)}
+.hero-meta{display:flex;justify-content:center;gap:0;flex-wrap:wrap;max-width:700px;margin:0 auto 40px;border:1px solid var(--sand)}
+.hero-meta-item{text-align:center;padding:20px 40px;flex:1;min-width:160px}
+.hero-meta-item:not(:last-child){border-right:1px solid var(--sand)}
+.hero-meta-label{font-size:9px;letter-spacing:3px;color:var(--taupe);text-transform:uppercase;margin-bottom:5px}
+.hero-meta-value{font-family:'Eczar',serif;font-size:17px;color:var(--espresso)}
+.hero-btn-wrap{text-align:center}
+.hero-btn{display:inline-block;background:var(--olive);color:var(--white);font-family:'Lato',sans-serif;font-size:11px;font-weight:400;letter-spacing:2px;text-transform:uppercase;padding:16px 44px;text-decoration:none;border-radius:2px;transition:background 0.2s}
+.hero-btn:hover{background:var(--espresso)}
+
+/* FLYER */
+.flyer-section{background:var(--white);padding:100px 40px}
+.flyer-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.flyer-text h2{font-family:'Eczar',serif;font-size:38px;font-weight:400;color:var(--espresso);margin-bottom:20px;line-height:1.2}
+.flyer-text p{font-size:16px;color:var(--warm);line-height:1.9;margin-bottom:32px}
+.price-block{display:flex;gap:16px;margin-bottom:32px}
+.price-item{padding:20px 24px;border:1px solid var(--sand);flex:1}
+.price-label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--taupe);margin-bottom:6px}
+.price-amount{font-family:'Eczar',serif;font-size:32px;color:var(--espresso);margin-bottom:4px}
+.price-date{font-size:11px;color:var(--taupe)}
+.price-item.featured{background:var(--olive-pale);border-color:var(--olive-light)}
+.price-item.featured .price-amount{color:var(--olive)}
+.price-item.featured .price-label{color:var(--olive-light)}
+.ticket-btn{display:inline-block;background:var(--olive);color:var(--white);font-family:'Lato',sans-serif;font-size:11px;font-weight:400;letter-spacing:2px;text-transform:uppercase;padding:16px 36px;text-decoration:none;border-radius:2px;transition:background 0.2s;width:100%;text-align:center}
+.ticket-btn:hover{background:var(--espresso)}
+
+/* ABOUT */
+.about-section{background:var(--cream);padding:100px 40px}
+.about-inner{max-width:640px;margin:0 auto;text-align:center}
+.section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--olive-light);margin-bottom:24px;display:block}
+.about-inner h2{font-family:'Eczar',serif;font-size:40px;font-weight:400;color:var(--espresso);margin-bottom:28px;line-height:1.25}
+.about-inner p{font-size:16px;color:var(--warm);line-height:1.95;margin-bottom:20px}
+.olive-line{width:40px;height:2px;background:var(--olive);margin:32px auto}
+
+/* PROGRAM */
+.program-section{background:var(--linen);padding:100px 40px}
+.program-inner{max-width:680px;margin:0 auto}
+.program-inner .section-label{text-align:center;display:block;margin-bottom:48px}
+.program-list{list-style:none}
+.program-item{padding:20px 0;border-bottom:1px solid var(--sand);display:flex;align-items:baseline;gap:20px}
+.program-item:last-child{border-bottom:none}
+.program-dot{width:5px;height:5px;border-radius:50%;background:var(--olive);flex-shrink:0;margin-top:9px}
+.program-item.is-break .program-dot{background:var(--sand)}
+.program-name{font-family:'Eczar',serif;font-size:19px;font-weight:400;color:var(--espresso);margin-bottom:2px;line-height:1.3}
+.program-item.is-break .program-name{font-family:'Lato',sans-serif;font-size:11px;font-weight:300;letter-spacing:2px;color:var(--taupe);text-transform:uppercase}
+.program-lead{font-size:13px;color:var(--taupe);letter-spacing:0.3px}
+
+/* FACILITATORS */
+.facilitators-section{background:var(--fac-bg);padding:100px 40px}
+.facilitators-inner{max-width:960px;margin:0 auto}
+.fac-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-bottom:0;border:1px solid var(--fac-border)}
+.fac-card{text-align:center;padding:40px 24px 32px;background:var(--fac-bg)}
+.fac-card.featured{background:var(--olive-pale)}
+.fac-card:not(:last-child){border-right:1px solid var(--fac-border)}
+.fac-photo{width:100%;max-width:200px;display:block;margin:0 auto 20px;border-radius:3px}
+.fac-name{font-family:'Eczar',serif;font-size:18px;color:var(--espresso);margin-bottom:4px}
+.fac-org{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--taupe);margin-bottom:16px}
+.fac-number{font-family:'Eczar',serif;font-size:48px;font-weight:400;color:#B8A898;line-height:1;margin-bottom:20px}
+.fac-card.featured .fac-number{color:#B8C4A0}
+.fac-bio{font-size:14px;color:var(--warm);line-height:1.8}
+.fac-card.featured .fac-org{color:var(--olive-light)}
+.with-strip{display:flex;align-items:center;gap:32px;padding:32px 40px;border:1px solid var(--fac-border);border-top:none;background:var(--white)}
+.with-photo{width:110px;flex-shrink:0;border-radius:3px}
+.with-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe);margin-bottom:8px}
+.with-name{font-family:'Eczar',serif;font-size:20px;color:var(--espresso);margin-bottom:4px}
+.with-org{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--taupe)}
+
+/* VENUE */
+.venue-section{background:var(--linen);padding:100px 40px}
+.venue-inner{max-width:640px;margin:0 auto;text-align:center}
+.venue-inner h2{font-family:'Eczar',serif;font-size:40px;font-weight:400;color:var(--espresso);margin-bottom:8px}
+.venue-addr{font-size:13px;color:var(--taupe);letter-spacing:1.5px;margin-bottom:40px}
+.venue-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:40px}
+.venue-cell{background:var(--cream);padding:24px 16px;text-align:center}
+.venue-cell-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe);margin-bottom:6px}
+.venue-cell-val{font-family:'Eczar',serif;font-size:18px;color:var(--espresso)}
+.venue-note{font-size:15px;color:var(--warm);line-height:1.85}
+
+/* CTA */
+.cta-section{background:var(--espresso);padding:100px 40px;text-align:center;position:relative}
+.cta-section::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--olive)}
+.cta-section h2{font-family:'Eczar',serif;font-size:clamp(36px,6vw,60px);font-weight:400;color:var(--cream);margin-bottom:12px;line-height:1.2}
+.cta-section p{font-family:'Eczar',serif;font-style:italic;font-size:20px;color:var(--taupe);margin-bottom:44px}
+.cta-btn{display:inline-block;background:var(--olive);color:var(--white);font-family:'Lato',sans-serif;font-size:11px;font-weight:400;letter-spacing:2px;text-transform:uppercase;padding:18px 52px;text-decoration:none;border-radius:2px;transition:background 0.2s}
+.cta-btn:hover{background:var(--olive-light)}
+.cta-note{font-size:11px;color:var(--warm);margin-top:20px;letter-spacing:1px}
+
+/* FOOTER */
+footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);padding:48px 40px;text-align:center}
+.footer-logo{font-family:'Eczar',serif;font-size:13px;letter-spacing:3px;color:var(--taupe);text-transform:uppercase;margin-bottom:16px}
+.footer-tagline{font-family:'Eczar',serif;font-style:italic;font-size:15px;color:rgba(255,255,255,0.3);margin-bottom:20px}
+.footer-links{font-size:12px;color:var(--taupe);letter-spacing:1px;margin-bottom:6px}
+.footer-links a{color:var(--taupe);text-decoration:none}
+.footer-links a:hover{color:var(--cream)}
+
+/* RESPONSIVE */
+@media(max-width:720px){
+  nav{padding:14px 20px}
+  .hero-meta{flex-direction:column;border:none;gap:0}
+  .hero-meta-item{border-right:none!important;border-bottom:1px solid var(--sand)}
+  .hero-meta-section{padding:40px 20px}
+  .flyer-inner{grid-template-columns:1fr;gap:40px}
+  .fac-grid{grid-template-columns:1fr!important;gap:0}
+  .fac-card:not(:last-child){border-right:none;border-bottom:1px solid var(--fac-border)}
+  .with-strip{flex-direction:column;text-align:center;gap:16px}
+  .venue-grid{grid-template-columns:1fr}
+  .price-block{flex-direction:column}
+  .about-section{padding:60px 24px}
+  .program-section{padding:60px 24px}
+  .facilitators-section{padding:60px 24px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://olivetreeinstitute.ca" class="nav-logo">Olive Tree Institute</a>
+  <a href="https://www.tickettailor.com/events/olivetreeinstitute1/2453156" class="nav-cta" target="_blank">Get Tickets</a>
+</nav>
+
+<!-- BANNER -->
+<img src="she-speaks-banner.jpg" alt="She Speaks: A Return to Fitrah" class="banner-img">
+
+<!-- HERO META -->
+<section class="hero-meta-section">
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <p class="hero-meta-label">Date</p>
+      <p class="hero-meta-value">Sunday, November 15, 2026</p>
+      <p style="font-size:13px;color:var(--taupe);margin-top:4px">9:00 AM to 5:00 PM</p>
+    </div>
+    <div class="hero-meta-item">
+      <p class="hero-meta-label">Location</p>
+      <p class="hero-meta-value">My Vitae, Oakville</p>
+    </div>
+    <div class="hero-meta-item">
+      <p class="hero-meta-label">Capacity</p>
+      <p class="hero-meta-value">35 Women</p>
+    </div>
+    </div>
+  <div class="hero-btn-wrap">
+    <a href="https://www.tickettailor.com/events/olivetreeinstitute1/2453156" class="hero-btn" target="_blank">Secure Your Seat</a>
+  </div>
+</section>
+
+<!-- FLYER + TICKETS -->
+<section class="flyer-section" id="tickets">
+  <div class="flyer-inner">
+    <div>
+      <img src="she-speaks-flyer.jpg" alt="She Speaks flyer" style="width:100%;border-radius:4px;box-shadow:0 8px 32px rgba(58,46,34,0.12)">
+    </div>
+    <div class="flyer-text">
+      <h2>A day built for the woman who forgot how to take up space.</h2>
+      <p>She Speaks is an intimate full-day gathering for 35 Muslim women in Oakville. Breakfast, lunch, and refreshments included. Seats are limited.</p>
+      <div class="price-block">
+        <div class="price-item featured">
+          <p class="price-label">Early Bird</p>
+          <p class="price-amount">$225</p>
+          <p class="price-date">Until October 23</p>
+        </div>
+        <div class="price-item">
+          <p class="price-label">Regular</p>
+          <p class="price-amount">$250</p>
+          <p class="price-date">From October 24</p>
+        </div>
+      </div>
+      <a href="https://www.tickettailor.com/events/olivetreeinstitute1/2453156" class="ticket-btn" target="_blank">Register Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <span class="section-label">About the Day</span>
+    <h2>You were not born silent. That came later.</h2>
+    <div class="olive-line"></div>
+    <p>She Speaks: A Return to Fitrah is rooted in the Islamic concept of fitrah, the innate God-given nature every person is born with.</p>
+    <p>Somewhere along the way, most of us learned to make ourselves smaller. In rooms, in relationships, in our own minds. This is a full day of guided reflection, embodied voice practice, Islamic meditation, and honest conversation in a circle of women who understand exactly what you mean.</p>
+    <p><strong style="font-weight:700">35 seats.</strong> One room. A return to the voice that was always yours.</p>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="program-section" id="program">
+  <div class="program-inner">
+    <span class="section-label" style="text-align:center;display:block;margin-bottom:48px">The Program</span>
+    <ul class="program-list">
+      <li class="program-item is-break">
+        <div class="program-dot"></div>
+        <div><p class="program-name">Arrivals, Registration + Breakfast</p></div>
+      </li>
+      <li class="program-item">
+        <div class="program-dot"></div>
+        <div>
+          <p class="program-name">Welcome &amp; Introductions</p>
+          <p class="program-lead">Rimshah, Nisha &amp; Maryam</p>
+        </div>
+      </li>
+      <li class="program-item">
+        <div class="program-dot"></div>
+        <div>
+          <p class="program-name">Sacred Opening + The Fitrah Within</p>
+          <p class="program-lead">Rimshah Ahmed</p>
+        </div>
+      </li>
+      <li class="program-item">
+        <div class="program-dot"></div>
+        <div>
+          <p class="program-name">Naming the Silence</p>
+          <p class="program-lead">Nisha Ravindranath</p>
+        </div>
+      </li>
+      <li class="program-item">
+        <div class="program-dot"></div>
+        <div>
+          <p class="program-name">Sound Bath</p>
+          <p class="program-lead">External Practitioner</p>
+        </div>
+      </li>
+      <li class="program-item is-break">
+        <div class="program-dot"></div>
+        <div><p class="program-name">Lunch + Salah</p></div>
+      </li>
+      <li class="program-item">
+        <div class="program-dot"></div>
+        <div>
+          <p class="program-name">The Women Who Spoke Before Us</p>
+          <p class="program-lead">Maryam Anwer</p>
+        </div>
+      </li>
+      <li class="program-item">
+        <div class="program-dot"></div>
+        <div>
+          <p class="program-name">One True Sentence</p>
+          <p class="program-lead">Nisha Ravindranath</p>
+        </div>
+      </li>
+      <li class="program-item">
+        <div class="program-dot"></div>
+        <div>
+          <p class="program-name">Dua: Speak to Him</p>
+          <p class="program-lead">Maryam Anwer</p>
+        </div>
+      </li>
+      <li class="program-item">
+        <div class="program-dot"></div>
+        <div>
+          <p class="program-name">Sacred Closing</p>
+          <p class="program-lead">Rimshah Ahmed</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div style="height:3px;background:var(--olive);opacity:0.15"></div>
+<!-- FACILITATORS -->
+<section class="facilitators-section" id="facilitators">
+  <div class="facilitators-inner">
+    <span class="section-label" style="display:block;text-align:center;margin-bottom:48px">Your Facilitators</span>
+    <div class="fac-grid">
+      <div class="fac-card">
+        
+        <p class="fac-name">Nisha Ravindranath</p>
+        <p class="fac-org">Salam Spaces</p>
+        <p class="fac-bio">Nisha Ravindranath is the founder of Salam Spaces, a GTA-based community initiative dedicated to creating meaningful programs, events, and spaces for Muslim children and families. A homeschooling mother and revert to Islam, Nisha brings a lived understanding of what it means to build a faith-rooted life from the inside out. Her work is grounded in community, connection, and the belief that Muslim families deserve spaces where they can grow together with intention.</p>
+      </div>
+      <div class="fac-card featured">
+        
+        <p class="fac-name">Rimshah Ahmed</p>
+        <p class="fac-org">Olive Tree Institute</p>
+        <p class="fac-bio">Rimshah Ahmed is a TEDx Ontario Public Service speaker, award-winning Speaker Slam Top 3 North America finalist, and founder of Olive Tree Institute. A program designer, educator, and Muslim community leader, she has spoken at the Canadian Mental Health Association (CMHA) National Conference and advocates for faith-rooted mental health support for Muslim women, youth, and neurodivergent families. Her work builds the programs, curricula, and spaces where Muslim communities grow into their fullest selves.</p>
+      </div>
+      <div class="fac-card">
+        
+        <p class="fac-name">Maryam Anwer</p>
+        <p class="fac-org">Taqwa Community</p>
+        <p class="fac-bio">Educator, speaker, and founder of The Taqwa Community, a faith-centered platform creating meaningful spaces for Muslim women to learn, reflect, and grow through their relationship with Allah(swt) and the Qur'an. Her work sits at the intersection of faith, personal development, and women's empowerment, and she brings a deep belief that women who are given space to be heard without judgment become more courageous in using their voices for meaningful change.</p>
+      </div>
+    </div>
+    </div>
+</section>
+
+<!-- VENUE -->
+<section class="venue-section" id="venue">
+  <div class="venue-inner">
+    <span class="section-label">The Venue</span>
+    <h2>My Vitae</h2>
+    <p class="venue-addr">1155 North Service Road West, Oakville, ON</p>
+    <div class="venue-grid">
+      <div class="venue-cell">
+        <p class="venue-cell-label">Date</p>
+        <p class="venue-cell-val">Sunday, Nov 15</p>
+      </div>
+      <div class="venue-cell">
+        <p class="venue-cell-label">Time</p>
+        <p class="venue-cell-val">9:00 AM to 5:00 PM</p>
+      </div>
+      <div class="venue-cell">
+        <p class="venue-cell-label">Included</p>
+        <p class="venue-cell-val" style="font-size:13px;line-height:1.4">Breakfast, Lunch &amp; Refreshments</p>
+      </div>
+    </div>
+    <p class="venue-note">My Vitae is a wellness and healing space in Oakville designed for exactly this kind of day. Warm, intentional, and built for community. Breakfast, lunch, and refreshments are included.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>35 seats. One day.<br>A return.</h2>
+  <p>Early bird pricing ends October 23.</p>
+  <a href="https://www.tickettailor.com/events/olivetreeinstitute1/2453156" class="cta-btn" target="_blank">Register Now</a>
+  <p class="cta-note">No refunds. Tickets are transferable.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-logo">Olive Tree Institute</p>
+  <p class="footer-tagline">Faith-rooted programs for Muslim women, youth, and families.</p>
+  <p class="footer-links">
+    <a href="https://olivetreeinstitute.ca" target="_blank">olivetreeinstitute.ca</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://www.instagram.com/olive.tree.institute" target="_blank">@olive.tree.institute</a></p>
+</footer>
+
+</body>
+</html>
