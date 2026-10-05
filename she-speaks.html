@@ -133,6 +133,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,
 .cta-btn:hover{background:var(--olive-light)}
 .cta-note{font-size:11px;color:var(--warm);margin-top:20px;letter-spacing:1px}
 
+.program-desc{font-size:15px;color:var(--warm);line-height:1.75;margin-top:8px}
+
+/* FAQ */
+.faq-section{background:var(--fac-bg);padding:100px 40px}
+.faq-inner{max-width:720px;margin:0 auto}
+.faq-inner .section-label{text-align:center;display:block;margin-bottom:48px}
+.faq-item{border-bottom:1px solid var(--fac-border)}
+.faq-item:first-child{border-top:1px solid var(--fac-border)}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 0;font-family:'Eczar',serif;font-size:19px;color:var(--espresso);line-height:1.4}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'';flex-shrink:0;width:9px;height:9px;border-right:2px solid var(--olive);border-bottom:2px solid var(--olive);transform:rotate(45deg);margin-top:-4px;transition:transform .25s ease}
+.faq-item[open] summary::after{transform:rotate(225deg);margin-top:4px}
+.faq-item summary:hover{color:var(--olive)}
+.faq-item summary:focus-visible{outline:2px solid var(--olive-light);outline-offset:4px}
+.faq-item p{font-size:16px;color:var(--warm);line-height:1.9;padding:0 40px 26px 0}
+
 /* FOOTER */
 footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);padding:48px 40px;text-align:center}
 .footer-logo{font-family:'Eczar',serif;font-size:13px;letter-spacing:3px;color:var(--taupe);text-transform:uppercase;margin-bottom:16px}
@@ -156,6 +172,9 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
   .about-section{padding:60px 24px}
   .program-section{padding:60px 24px}
   .facilitators-section{padding:60px 24px}
+  .faq-section{padding:60px 24px}
+  .faq-item summary{font-size:17px}
+  .faq-item p{padding-right:0}
 }
 </style>
 </head>
@@ -243,6 +262,7 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
         <div>
           <p class="program-name">Welcome &amp; Introductions</p>
           <p class="program-lead">Rimshah, Nisha &amp; Maryam</p>
+          <p class="program-desc">We open the circle together. Land, breathe, and meet the women who will hold the space with you today.</p>
         </div>
       </li>
       <li class="program-item">
@@ -250,6 +270,7 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
         <div>
           <p class="program-name">Sacred Opening + The Fitrah Within</p>
           <p class="program-lead">Rimshah Ahmed</p>
+          <p class="program-desc">A grounding in the Islamic concept of fitrah, the nature you were born with before the world shaped you otherwise. We return to the beginning.</p>
         </div>
       </li>
       <li class="program-item">
@@ -257,6 +278,7 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
         <div>
           <p class="program-name">Naming the Silence</p>
           <p class="program-lead">Nisha Ravindranath</p>
+          <p class="program-desc">When did you stop speaking up? This session names the moments, the rooms, and the relationships where your voice learned to shrink.</p>
         </div>
       </li>
       <li class="program-item">
@@ -264,17 +286,20 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
         <div>
           <p class="program-name">Sound Bath</p>
           <p class="program-lead">External Practitioner</p>
+          <p class="program-desc">A meditative pause using sound to settle the nervous system and let the morning's work move through you.</p>
         </div>
       </li>
       <li class="program-item is-break">
         <div class="program-dot"></div>
-        <div><p class="program-name">Lunch + Salah</p></div>
+        <div><p class="program-name">Lunch + Salah</p>
+          <p class="program-desc">Rest, nourish, and pray. This midday break is built into the day intentionally.</p></div>
       </li>
       <li class="program-item">
         <div class="program-dot"></div>
         <div>
           <p class="program-name">The Women Who Spoke Before Us</p>
           <p class="program-lead">Maryam Anwer</p>
+          <p class="program-desc">Khadijah. Aisha. Fatimah. Muslim women have always used their voices with courage and conviction. This session roots your voice in theirs.</p>
         </div>
       </li>
       <li class="program-item">
@@ -282,6 +307,7 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
         <div>
           <p class="program-name">One True Sentence</p>
           <p class="program-lead">Nisha Ravindranath</p>
+          <p class="program-desc">You will speak one honest thing out loud, in a circle of women who are listening. No performance. Just truth.</p>
         </div>
       </li>
       <li class="program-item">
@@ -289,6 +315,7 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
         <div>
           <p class="program-name">Dua: Speak to Him</p>
           <p class="program-lead">Maryam Anwer</p>
+          <p class="program-desc">You have spoken to the room. Now you speak to Allah(swt). A guided session in the art of dua, where you write your own words and offer them.</p>
         </div>
       </li>
       <li class="program-item">
@@ -296,6 +323,7 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
         <div>
           <p class="program-name">Sacred Closing</p>
           <p class="program-lead">Rimshah Ahmed</p>
+          <p class="program-desc">We close the circle the way we opened it, together, with intention, and with something to carry home.</p>
         </div>
       </li>
     </ul>
@@ -351,6 +379,67 @@ footer{background:var(--espresso);border-top:1px solid rgba(255,255,255,0.08);pa
       </div>
     </div>
     <p class="venue-note">My Vitae is a wellness and healing space in Oakville designed for exactly this kind of day. Warm, intentional, and built for community. Breakfast, lunch, and refreshments are included.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faqs">
+  <div class="faq-inner">
+    <span class="section-label">Frequently Asked Questions</span>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is She Speaks?</summary>
+        <p>She Speaks is a full-day gathering for Muslim women rooted in the Islamic concept of fitrah. It is not a conference, a therapy session, or a lecture. It is an intentional day of guided reflection, voice practice, Islamic meditation, and honest conversation in a small circle of women who understand what you are carrying.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Who is this for?</summary>
+        <p>Any Muslim woman who has felt herself go quiet in rooms she deserved to take up space in. Whether you are confident on the outside but silent on the inside, or you know exactly what you want to say but something holds you back, this day was built for you.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need to be a public speaker or comfortable speaking in front of people?</summary>
+        <p>No. This is not a public speaking event. You will not be put on the spot or asked to perform. The speaking we do is honest and intimate, in a small circle where every woman is in the same place you are.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is this a therapy session?</summary>
+        <p>No. She Speaks is not therapy and is not a substitute for mental health support. It is a faith-rooted personal development experience. If you are currently working through something heavy, it may complement your journey but it is not clinical care.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is this only for practicing Muslims?</summary>
+        <p>The day is rooted in Islamic concepts and will include salah, dua, and Quranic references. It is designed for Muslim women who want a faith-integrated experience, not a secular wellness event.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does the day actually look like?</summary>
+        <p>You arrive to breakfast and registration, then move through facilitated sessions on voice, Islamic meditation, the stories of Muslim women before us, personal truth-telling, and dua writing. There is a sound bath, a nourishing lunch, and salah built into the day. You leave by 5:00 PM.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Will I have to share personal things with the group?</summary>
+        <p>You are never required to share anything. The space invites honesty but never demands it. You can participate fully by simply being present and listening.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How many women will be there?</summary>
+        <p>35 women. This is intentionally small so the space stays intimate, safe, and unhurried.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is included in the ticket price?</summary>
+        <p>Welcome breakfast, refreshments throughout the day, a nourishing lunch, all sessions, and a gift for each attendee.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What should I wear?</summary>
+        <p>Comfortable, modest clothing. You may be sitting on the floor for some sessions, so dress accordingly.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is there parking at the venue?</summary>
+        <p>My Vitae is located at 1155 North Service Road West, Oakville. Parking is available at the venue.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I get a refund if I cannot attend?</summary>
+        <p>Tickets are non-refundable. However, you may transfer your ticket to another person.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I bring a friend?</summary>
+        <p>Yes, and we encourage it. Buy your tickets separately and let us know in the intake form so we can seat you together.</p>
+      </details>
+    </div>
   </div>
 </section>
 
